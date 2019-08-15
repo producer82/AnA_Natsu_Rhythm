@@ -49,7 +49,7 @@ public class MakeNote : MonoBehaviour
 
     void Start()
     {
-        beatmap = BeatmapDecoder.Decode(Application.streamingAssetsPath + "@/Beatmaps/LoveDramatic.osu");
+        beatmap = BeatmapDecoder.Decode("./Assets/Beatmaps/LoveDramatic.osu");
 
         velocity = (float)beatmap.DifficultySection.SliderMultiplier;
 
